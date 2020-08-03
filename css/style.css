@@ -13,6 +13,12 @@ body {
     clear: both;
 }
 
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
 #mainHeader {
     background: brown;
     color: white;
@@ -67,10 +73,10 @@ body {
 }
 
 #main {
-    float: right;
+    margin: auto;
     width: 70%;
-    padding: 0 30px;
-    box-sizing: border-box;
+    border: 1px solid #000000;
+    padding: 35px;
 }
 #sidebar {
     float: left;
@@ -88,7 +94,7 @@ body {
     margin-top: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
     #main, #sidebar {
         width: 100%;
         float: none;

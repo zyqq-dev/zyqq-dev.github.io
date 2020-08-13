@@ -19,6 +19,14 @@ const navSlide = () => {
         //burger animation
         burger.classList.toggle('toggle');
     });
+
+    const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+    //change the theme
+    document.body.classList.toggle('dark');
+})
+
 }
 
 navSlide();

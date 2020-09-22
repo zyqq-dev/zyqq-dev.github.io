@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" >
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> 
     <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
@@ -18,26 +19,14 @@
     </div>
 </header> -->
 
-<nav id="altNav">
-    <div class="logo">
-        <h4>HAZIQ HAPIZ</h4>
-    </div>
-    
-    <div>
-        <input type="checkbox" class="checkbox">
-        <label for="checkbox" class="label">
-            <i class="fa fa-moon-o" aria-hidden="true"></i>
-            <i class="fa fa-sun-o" aria-hidden="true"></i>
-            <!-- <i class="material-icons" style="font-size:12px;color:#f39c12;">nights-stay</i>
-            <i class="material-icons" style="font-size:14px;color:#f1c40f;">wb_sunny</i> -->
-            <div class="ball"></div>
-        </label>
-    </div>
+<header>
+        <a href="#" class="logo">HAZIQ HAPIZ</a>
+
+
     <!-- <div class="container"> -->
         <!-- <div> -->
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
             <li> <a href="https://github.com/zyqhpz/" target="_blank">GitHub</a> </li>
@@ -49,12 +38,12 @@
         <div class="line2"></div>
         <div class="line3"></div>
     </div>
-</nav>
+</header>
 
 <section id="jumbo">
-    <div class="container">
+    <!-- <div class="container">
         <h1>WELCOME..!!</h1>
-    </div>
+    </div> -->
 </section>
     <div class="container">
         <!-- <aside id="sidebar">
@@ -65,8 +54,24 @@
         <section id="main">
             <h2>About Me</h2>
         <hr>
-        <p>Hi! <br> I am Haziq Hapiz. <br> I'm just graduated from Selangor Matriculation College in Module 2 programme with 3.75 CGPA. This website is for my personal purpose and as my portfolio during my undergraduate studies later. Feel free to hit me up and share your opinion about this blog :D</p>
+        <!-- <p>Hi! <br> I am Haziq Hapiz. <br> I'm just graduated from Selangor Matriculation College in Module 2 programme with 3.75 CGPA. This website is for my personal purpose and as my portfolio during my undergraduate studies later. Feel free to hit me up and share your opinion about this blog :D</p> -->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt ex id arcu dignissim tempus. Mauris vehicula dapibus aliquet. Nullam scelerisque orci est, vitae rhoncus lacus congue at. Duis vestibulum convallis lacus sed fermentum. Mauris urna diam, rhoncus nec tempor sed, cursus ac neque. Aliquam at est eleifend, sollicitudin neque sit amet, porttitor quam. Sed et dui vulputate, malesuada odio eu, facilisis velit. Aenean pellentesque risus justo. Nunc efficitur ex leo, eu efficitur metus venenatis vel. Nam in ornare purus, eget vulputate arcu. Etiam auctor eget mi pulvinar cursus. Morbi aliquam auctor nisi vel dictum. Vivamus feugiat rutrum accumsan.
+        </p>
         </section>
+
+        <section id="main">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt ex id arcu dignissim tempus. Mauris vehicula dapibus aliquet. Nullam scelerisque orci est, vitae rhoncus lacus congue at. Duis vestibulum convallis lacus sed fermentum. Mauris urna diam, rhoncus nec tempor sed, cursus ac neque. Aliquam at est eleifend, sollicitudin neque sit amet, porttitor quam. Sed et dui vulputate, malesuada odio eu, facilisis velit. Aenean pellentesque risus justo. Nunc efficitur ex leo, eu efficitur metus venenatis vel. Nam in ornare purus, eget vulputate arcu. Etiam auctor eget mi pulvinar cursus. Morbi aliquam auctor nisi vel dictum. Vivamus feugiat rutrum accumsan.
+        </p>
+        </section>
+
+        <section id="main">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt ex id arcu dignissim tempus. Mauris vehicula dapibus aliquet. Nullam scelerisque orci est, vitae rhoncus lacus congue at. Duis vestibulum convallis lacus sed fermentum. Mauris urna diam, rhoncus nec tempor sed, cursus ac neque. Aliquam at est eleifend, sollicitudin neque sit amet, porttitor quam. Sed et dui vulputate, malesuada odio eu, facilisis velit. Aenean pellentesque risus justo. Nunc efficitur ex leo, eu efficitur metus venenatis vel. Nam in ornare purus, eget vulputate arcu. Etiam auctor eget mi pulvinar cursus. Morbi aliquam auctor nisi vel dictum. Vivamus feugiat rutrum accumsan.
+            </p>
+        </section>
+        
         <div class="clearFix"></div>
         <!-- <div id="pExample">
             <span>Span 1</span>
@@ -78,8 +83,13 @@
         <p>Copyright &copy 2020 CSS HTML Beginners Website</p>
     </footer>
 
-
-    <script src="js/app.js" ></script>
-    <script src="js/app1.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- <script src="js/app.js" ></script>
+    <script src="js/app1.js"></script> -->
 </body>
 </html>
